@@ -1,14 +1,20 @@
 import express from "express";
 import bodyParser from "body-parser";
+import cors  from "cors";
+
 
 import cookieParser from "cookie-parser";
 
 const app = express();
 const port = 3000;
+var corsOptions = {
+  origin: '*',}
 
+app.use(cors(corsOptions))
 app.use(cookieParser());
 app.use(express.static("public"));
 app.use(bodyParser.urlencoded({ extended: true }));
+
 
 const user = ["admin"];
 const password = ["123"];
