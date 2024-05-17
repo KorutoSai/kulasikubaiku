@@ -1,0 +1,55 @@
+.iconImg {
+  height: 50px;
+  border-radius: 50px;
+}
+
+.logBody {
+  height: 80vh;
+}
+
+/* about */
+.intro-image{
+  height:300px;
+  width: 300px;
+  border-radius:100%;
+}
+
+.intro-wrapper{
+
+      
+      height: 80vh;
+      display: flex;
+      flex-direction: column;
+      align-items: center;
+      justify-content: center;
+
+
+}
+
+/* intro animation */
+.intro{
+  animation: example;
+  animation-duration: 2s;
+}
+/*intro animation */
+/* animation */
+@keyframes example {
+  0%   {-webkit-transform: translateY(-50%);
+      transform: translateY(-50%);
+      opacity: 0;}
+  100% {    -webkit-transform: translateY(0);
+      transform: translateY(0);
+      opacity: 1;}
+}
+/* animation */
+
+
+/* about */
+
+
+@media (max-width: 515px) {
+  .index1 {
+    width: 300px;
+  }
+}
+
